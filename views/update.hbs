@@ -1,0 +1,50 @@
+{{>header}}
+<title>CURD |Add</title>
+{{>navbar}}
+<div class="container-fluid my-2">
+    <div class="w-100">
+        <div class=" w-75 m-auto center-div">
+            <h5 class="background p-2 text-center">Update Employee Record</h5>
+            <form action="/update/{{data.id}}" method="post">
+                    <div class="mb-3">
+                        <label>Name</label>
+                        <input type="text"  name="name" class="form-control" placeholder="Enter the Full name" value="{{data.name}}">
+                    </div>
+                 <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label>Email</label>
+                        <input type="text"  name="email" class="form-control" placeholder="Enter the Full Email" value="{{data.email}}">
+                    </div>
+                    <div class="col-md-6">
+                        <label>Phone</label>
+                        <input type="number" name="phone" class="form-control" placeholder="Enter your Phone" value="{{data.phone}}">
+                    </div>
+                </div>
+                    <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label>Desegnation</label>
+                        <input type="text" class="form-control" name="designation" placeholder="Enter your designation"value="{{data.designation}}">
+                    </div>
+                    <div class="col-md-6">
+                        <label>Salary</label>
+                        <input type="number" class="form-control" name="salary" placeholder="Enter your salary"value="{{data.salary}}">
+                    </div>
+                </div>
+                    <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label>City</label>
+                        <input type="text" name="city" class="form-control" placeholder="Enter your city " value="{{data.city}}">
+                    </div>
+                    <div class="col-md-6">
+                        <label>State</label>
+                        <input type="text" name="state" class="form-control" placeholder="Enter your Satate" value="{{data.state}}">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <button type ="submit" class="background  border-0 w-100 rounded p-1" >Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{{>footer}}
